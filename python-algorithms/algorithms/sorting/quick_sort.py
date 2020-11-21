@@ -30,5 +30,5 @@ def _quick_sort(arr: List[DataT], low: int, high: int):
     if low >= high:
         return
     p = _partion(arr, low, high)
-    _quick_sort(arr, 0, p - 1)
+    _quick_sort(arr, low, p - 1)
     _quick_sort(arr, p + 1, high)
