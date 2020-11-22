@@ -9,7 +9,7 @@ def radix_sort(arr: List[int]):
     while base <= max_base:
         buckets = _radix_sort(buckets, base)
         base *= 10
-    # At last run,negative numbers will br put in bucket 9, beacuse a negative number `//` a positive number returns -1 and -1 mod 10 returns 9
+    # At last run, negative numbers will be put in bucket 9, beacuse a negative number `//` a positive number returns -1 and -1 mod 10 returns 9
     return buckets[9] + buckets[0]
 
 
